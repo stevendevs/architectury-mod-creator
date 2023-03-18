@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "@MODID@",
+  "version": "${version}",
+  "name": "@NAME@",
+  "description": "@DESCRIPTION@",
+  "authors": [
+    "@AUTHOR@"
+  ],
+  "contact": {
+    "homepage": "@PAGE@",
+    "sources": "@SOURCE@"
+  },
+  "license": "@LICENSE@",
+  "icon": "assets/@MODID@/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "@PACKAGE@.fabric.@NAME@Fabric"
+    ]
+  },@__MIXIN_FABRIC_BLOCK@
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=@MINECRAFT@",
+    "architectury": ">=@ARCHITECTURY_API@"
+  }
+}
